@@ -51,15 +51,25 @@ zef install .
 
 ** Implementation
 
-Just enter the player names & it'll print each throw along with scores.
-Press enter to play another round.
+It reads the log line by line and tries to match it with ~WhatsApp~
+grammar.
 
 ** Options
 
-*** players
+*** input
 
-Number of players. Default is 2, should be an integer equal to or
-greater than 2.
+Exported WhatsApp log.
+
+*** profile-name
+
+Your WhatsApp profile name. This is required to get stats for /Left/ and
+/Deleted/ column.
+
+** Caveats
+
+/Words/ count can be less than the actual count. If the message contains
+new lines then they have them in the log too. We read the log line by
+line, so it'll miss parts of messages with newline in them.
 
 * News
 
