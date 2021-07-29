@@ -1,0 +1,20 @@
+{
+    "name" : "lacerta",
+    "auth" : "zef:andinus",
+    "version" : "0.1.0",
+    "description" : "Lacerta parses WhatsApp exported logs",
+    "authors" : [ "Andinus <andinus@nand.sh>" ],
+    "license" : "ISC",
+    "perl" : "6.d",
+    "provides" : {
+        "Lacerta::CLI" : "lib/Lacerta/CLI.rakumod"
+    },
+    "depends" : [
+        "Terminal::Spinners",
+        "Text::Table::Simple"
+    ],
+    "tags": [
+        "Lacerta", "WhatsApp"
+    ],
+    "source-url" : "https://git.tilde.institute/andinus/lacerta"
+}
