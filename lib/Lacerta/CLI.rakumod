@@ -1,10 +1,13 @@
 use Terminal::Spinners;
 use Text::Table::Simple;
 
+# If no arguments are passed then run USAGE & exit.
+proto MAIN(|) is export {unless so @*ARGS {put $*USAGE; exit}; {*}}
+
 #| parses WhatsApp export
-multi sub MAIN (
+multi sub MAIN(
     Str $input where *.IO.f = "input", #= input log file to parse
-    Str $profile-name = "Andinus", #= your WhatsApp profile name
+    Str :$profile-name = "Andinus", #= your WhatsApp profile name
 ) is export {
     #| Parses the WhatsApp logs.
     grammar WhatsApp {
