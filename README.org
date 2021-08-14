@@ -7,6 +7,40 @@
 | Source          | https://git.tilde.institute/andinus/lacerta |
 | GitHub (mirror) | https://github.com/andinus/lacerta          |
 
+* Demo
+
+This is an example output on randomly generated data.
+
+#+begin_src
+andinus@ > lacerta exported
+(   ●  )
+Parsed 28000 logs in 5.00s
+[=== ]
+Generated data in 6.00s
+
+*---------*----------*-------*---------*-------*------------*------*
+| Name    | Messages | Words | Deleted | Media | ActiveHour | Left |
+*---------*----------*-------*---------*-------*------------*------*
+| User #1 | 9600     | 20000 | 500     | 900   | 22         | 10   |
+| User #2 | 6000     | 18000 | 200     | 900   | 22         | 20   |
+| User #3 | 12000    | 40000 | 300     | 1000  | 22         | 0    |
+--------------------------------------------------------------------
+*---------*------------*
+| Name    | FucksGiven |
+*---------*------------*
+| User #1 | 1          |
+| User #2 | 1          |
+| User #3 | 10         |
+------------------------
+*---------*---------------*---------------*---------------*
+| Name    | MostSpoken-#1 | #2            | #3            |
+*---------*---------------*---------------*---------------*
+| User #1 | word (90)     | then (20)     | have (20)     |
+| User #2 | word (100)    | then (300)    | have (30)     |
+| User #3 | word (1000)   | deleted (200) | deleted (200) |
+-----------------------------------------------------------
+#+end_src
+
 * Installation
 
 Lacerta is released to ~fez~, you can get it from there or install it from
