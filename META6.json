@@ -1,7 +1,7 @@
 {
     "name" : "lacerta",
     "auth" : "zef:andinus",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "description" : "Lacerta parses WhatsApp exported logs",
     "authors" : [ "Andinus <andinus@nand.sh>" ],
     "license" : "ISC",
