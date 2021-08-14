@@ -140,6 +140,13 @@ profile-name
   and /Deleted/ column.
 
 
+no-of-spoken
+╌╌╌╌╌╌╌╌╌╌╌╌
+
+  This sets the number of Most Spoken columns to be printed for each
+  user. The default is 3.
+
+
 Caveats
 ───────
 
@@ -150,6 +157,12 @@ Caveats
 
 News
 ════
+
+v0.1.1 - 2021-08-14
+───────────────────
+
+  ⁃ Add option for number of Most Spoken columns.
+
 
 v0.1.0 - 2021-07-29
 ───────────────────

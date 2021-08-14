@@ -99,6 +99,11 @@ Exported WhatsApp log.
 Your WhatsApp profile name. This is required to get stats for /Left/ and
 /Deleted/ column.
 
+*** no-of-spoken
+
+This sets the number of Most Spoken columns to be printed for each user.
+The default is 3.
+
 ** Caveats
 
 /Words/ count can be less than the actual count. If the message contains
@@ -106,6 +111,10 @@ new lines then they have them in the log too. We read the log line by
 line, so it'll miss parts of messages with newline in them.
 
 * News
+
+** v0.1.1 - 2021-08-14
+
++ Add option for number of Most Spoken columns.
 
 ** v0.1.0 - 2021-07-29
 

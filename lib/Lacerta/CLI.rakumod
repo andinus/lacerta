@@ -8,6 +8,7 @@ proto MAIN(|) is export {unless so @*ARGS {put $*USAGE; exit}; {*}}
 multi sub MAIN(
     Str $input where *.IO.f = "input", #= input log file to parse
     Str :$profile-name = "Andinus", #= your WhatsApp profile name
+    Int :$no-of-spoken = 3, #= number of Most Spoken columns
 ) is export {
     #| Parses the WhatsApp logs.
     grammar WhatsApp {
@@ -34,7 +35,6 @@ multi sub MAIN(
     my List @data;
     my List @given-data;
     my List @most-spoken-data;
-    my Int $no-of-spoken = 8;
 
     $timed = now;
     Spinner.new(:type<bounce>).await: Promise.start: {
